@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Калькулятор для програмістів</title>
+        <meta name="description"
+            content="Даний сайт дає вам змогу скористатися калькулятором для програмістів">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+            integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" role="navigation">
+                
+        
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Змінити навігацю">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarsDefault">
+                    <ul class="navbar-nav mr-auto">
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">На головну</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sign_up.html">Реєстрація</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sing_in.html">Вхід</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Профіль користувача</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Про сайт</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <div style="background:transparent !important" class="jumbotron">
+                <div class="container-fluid">
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-4  col-sm-4 col-xs-4 col-lg-4 col-4 main_btn">
+                            <form>
+                                <input id ="input" type="text" value="" disabled>
+                            </form>             
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="Clear">C</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="Clear one symbol">←</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="=">=</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="7">7</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="8">8</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="9">9</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="/">/</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="4">4</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="5">5</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="6">6</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="*">*</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="1">1</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="2">2</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="3">3</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="-">-</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center justify-content-xs-center justify-content-sm-center justify-content-lg-center justify-content-center">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="0">0</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id=",">,</button>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 col-1 main_btn">
+                            <button type="button" id="+">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer role="contentinfo" class="footer">
+            <div class="container">
+                <span class="text-muted"> <a>  Виконав студент групи КВ-91 Дріф Р.К.  </a></span>
+            </div>
+        </footer>
+    </body>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+                integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+                integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+                crossorigin="anonymous"></script>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="https://pagecdn.io/lib/mathjs/10.5.3/math.js"integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>></script>
+</html>
