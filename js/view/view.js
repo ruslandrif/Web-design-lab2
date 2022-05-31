@@ -8,7 +8,6 @@ export default class View {
             this.model.expression_str += symbol
         }
         document.getElementById('input').value = this.model.expression_str;
-        console.log("update ui")
     }
 
     Clear() {
@@ -17,7 +16,7 @@ export default class View {
     }
 
     EraseLastSymbol() {
-        this.model.expression_str.slice(0, -1);
+        this.model.expression_str = this.model.expression_str.slice(0, -1);
         this.UpdateUI()
     }
 }

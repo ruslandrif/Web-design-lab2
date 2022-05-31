@@ -6,7 +6,9 @@ export default class Controller {
         this.view = View;
 
        console.log(IsCalcForDevs)
-
+       document.getElementById('0').addEventListener("click",ev=>{
+        this.view.UpdateUI('0')
+        });
         document.getElementById('1').addEventListener("click",ev=>{
             this.view.UpdateUI('1')
         });
@@ -46,13 +48,42 @@ export default class Controller {
         document.getElementById('-').addEventListener("click",ev=>{
             this.view.UpdateUI('-')
         });
+        document.getElementById('.').addEventListener("click",ev=>{
+            this.view.UpdateUI('.')
+        });
         document.getElementById('=').addEventListener("click",ev=>{
-            //todo
+            this.model.calculate()
+            this.view.UpdateUI()
         });
         document.getElementById('Clear').addEventListener("click",ev=>{
-            //todo
             this.view.Clear()
         });
+        document.getElementById('Clear one symbol').addEventListener("click",ev=>{
+            this.view.EraseLastSymbol()
+        });
+        
+        if(IsCalcForDevs) {
+            document.getElementById('&').addEventListener("click",ev=>{
+                this.view.UpdateUI('&')
+            });
+            document.getElementById('|').addEventListener("click",ev=>{
+                this.view.UpdateUI('|')
+            });
+            document.getElementById('^').addEventListener("click",ev=>{
+                this.view.UpdateUI('^')
+            });
+            document.getElementById('Convert to HEX').addEventListener("click",ev=>{
+                //this.view.UpdateUI('^')
+                this.model.calculate()
+                this.model.dec2hex()
+                this.view.UpdateUI()
+            });
+            document.getElementById('Convert to binary').addEventListener("click",ev=>{
+                this.model.calculate()
+                this.model.dec2bin()
+                this.view.UpdateUI()
+            });
+        }
     }
 
     
